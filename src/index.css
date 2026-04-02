@@ -1,0 +1,87 @@
+@import "tailwindcss";
+@theme {
+  --color-primary: #1337ec;
+  --color-background-light: #f6f6f8;
+  --color-background-dark: #101322;
+  --font-display: "Inter", sans-serif;
+  --color-surface: #f7f9fb;
+  --color-surface-container-low: #f2f4f6;
+  --color-surface-container: #eceef0;
+  --color-surface-container-lowest: #ffffff;
+  --color-on-surface: #191c1e;
+  --color-on-surface-variant: #434655;
+  --color-primary: #004ac6;
+  --color-primary-container: #2563eb;
+  --color-error: #ba1a1a;
+  --color-error-container: #ffdad6;
+  --font-headline: "Manrope", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-label: "Inter", sans-serif;
+}
+
+@font-face {
+  font-family: "HindBold";
+  src: url("./app/assets/fonts/Hind-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PlusJakartaSans";
+  src: url("./app/assets/fonts/PlusJakartaSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lexend";
+  src: url("./app/assets/fonts/Lexend-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("./app/assets/fonts/Lato-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("./app/assets/fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PlusJakartaSans-Medium";
+  src: url("./app/assets/fonts/PlusJakartaSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Emoji-font";
+  src: url("./app/assets/fonts/Emoji-font.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PlusJakartaSans-Regular";
+  src: url("./app/assets/fonts/PlusJakartaSans-Regular.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+.bg-indigo-gradient {
+  background: linear-gradient(
+    135deg,
+    var(--color-primary) 0%,
+    var(--color-primary-container) 100%
+  );
+}
+/* Hide scrollbar but keep scroll */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE & Edge */
+  scrollbar-width: none;     /* Firefox */
+}
